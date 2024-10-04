@@ -1,0 +1,219 @@
+*{
+    font-family: "Bebas Neue";
+}
+ 
+  
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(194, 180, 180, 0.766);
+}
+
+.header{
+    border-bottom: solid rgba(238, 224, 224, 0.882) 3px;
+    color: rgb(0, 0, 0);
+    background-color: #adaaaa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height:90px;
+}
+
+.recherche{
+    margin-top: 15px;
+    align-items: left;
+}
+
+.logo{
+    height: 70px;
+}
+
+.accueilconnexion{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    font-size: large;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+
+.ficheproduit {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+   
+}
+.mainpic{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(255, 255, 255) 4px;
+    height: 500px;
+    
+  
+
+    
+}
+.mainpic p{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    padding-top: 20px;
+    
+   
+}
+.bottompic {
+    display: flex;
+    flex-direction: row;
+    border-bottom: #000000;
+    
+}
+
+.bottompic p {
+
+}
+.bottompic img{
+    display: flex;
+    flex-direction: row;
+    border: solid rgb(0, 0, 0) 4px;
+    height:300px;
+}
+
+.description {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    padding-top: 100px;
+    
+}   
+
+.description h2{
+
+}
+.main{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.bouton1 {
+
+
+} 
+
+.rectangles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+    width: 100%;
+    border: solid;
+    padding: 20px;
+}
+
+
+.r1, .r2, .r3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+
+.r1 {
+    background-color: red;
+    height: 90%;
+    width: 90%;
+}
+.r1 p{
+    
+    
+}
+
+.r2 {
+    
+    border-color: black;
+    font-size: 13px;
+    height: 90%;
+    width: 90%;
+}
+
+.r3 {
+    border-color: green;
+    height: 90%;
+    width: 90%;
+}
+.r1 h1,.r2 h1,.r3 h1 {
+    font-display: flex;
+    padding-bottom:50px ;
+    text-align: center;
+
+}
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articles h1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border: solid black 2px;
+    border-width: 4px;
+    
+    
+}
+
+
+.guns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.guns img {
+    height: 200px;
+    width: 200px;
+} 
+
+
+.footer{
+    height: 100px;
+    margin-top: 600px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+
+
