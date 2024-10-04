@@ -37,23 +37,8 @@ int compteur3 = 0;
         }
         printf("Il y a %d note inférieure à 10\n", compteur3);
 
-       
-
-
-            
-        
 
     }
-
-
-
-
-
-
-
-
-
-
 
     return 0;
 }
