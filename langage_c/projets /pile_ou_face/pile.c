@@ -8,40 +8,81 @@
 
 //FONCTIONS :
   
-void ortho(char * lettres,char*mot) {                    // tout convertir en minuscules.
-    
-for(int i = 0; i < strlen(lettres); i++) {
-    if(lettres[i] < 90) {
-        mot[i]= lettres[i]+32;
-} else {
-    mot[i] = lettres[i];
-}
-}
-}
+void ortho(char * maj, char *  mot) {                    // tout convertir en minuscules.
 
+for(int i = 0; i < strlen(maj); i++) { 
+    if (maj[i] >= 'A' && maj[i] <= 'Z') {
+        mot[i]= maj[i]+32;
+    } else {
+    mot[i] = maj[i];
+}
+}
+}
+int transform(char * saisie){
+    char mini[255];
+    saisie[strlen(saisie)-1] = 0;                           // supp \n
+    memset(mini,0,255);
+    ortho(saisie,mini);
 
+    if(strcmp(mini, "0") == 0) {
+        return -2;
+    }
+    if(strcmp(mini, "pile") == 0) {
+        return PILE;
+
+    }else if ( strcmp(mini, "face") == 0) {
+        return FACE;
+    }
+
+    if(strcmp(mini, "1") == 0) {
+        return PILE;
+
+    }else if ( strcmp(mini, "2") == 0) {
+        return FACE;
+    }
+    if(strcmp(mini, "p") == 0) {
+        return PILE;
+
+    }else if (strcmp(mini, "f") == 0) {
+        return FACE;
+    }
+        return -1;    // = erreur
+    }
 
 int main () {
-
 
 srand(time(NULL));
     
 char saisie[255]; 
-printf("~~~PILE OU FACE ~~~\n");
-printf("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
-printf("Pile ou face ?\n");
+printf("\n######## Pile ou Face ##########\n");
 
-    for(int tour = 0; tour < 12; tour++) {
-        char score[255];
-        int defaite = 0;
-        
-        
+int victoire = 0;
+int defaite = 0;
+
+    for(int tour = 0; tour < 10; tour++) {
+
+        printf("\nPile ou face ?\n");
+        printf("\n1. Pile\n");
+        printf("\n2. Face\n");
+        printf("\n0. Quitter le jeu\n");
+
+        int piece = rand() %2 + 1;
+
         fgets(saisie,sizeof(saisie), stdin);
-        int piece = rand()%2 + 1;
-        int reponse = 0;
+        int reponse = transform(saisie);
 
-        printf("%d\n", piece);
-        printf("loading");
+
+        if (reponse == -2) {
+            printf("\nVous quittez le jeu... snif :(\n");
+            return 0;
+        }
+
+        if (reponse == -1) {
+            printf("\nerreur entrez soit pile soit face.\n");
+            tour--; 
+        }
+
+        printf("\nloading\n");
         fflush(stdout);
         sleep(1);
         printf(".");
@@ -51,38 +92,26 @@ printf("Pile ou face ?\n");
         fflush(stdout);
         sleep(1);
         printf(".\n");
-        reponse = atoi(saisie);
         
         if(piece == reponse) {
-            printf("gagné\n");
+            printf("\ngagné\n");
+            victoire ++;
         
         }else{
-            printf("perdu\n");
+            printf("\nperdu\n");
             defaite ++;
         }
-        if(defaite = 9) {
+            printf("\n%d victoire\n", victoire);
+            printf("\n%d défaite\n", defaite);
+            printf("\n|==================================|\n");
+            
+
+            
+        if(defaite == 9) {
             return 0;
         }
+        }
 
-        char buf[255];
-        
-        fgets(reponse,255, stdin);
-        reponse[strlen(reponse)-1] = 0;
-        ortho( reponse,buf);
-        printf("%s",buf);
-
-
-
-
-
-    }
+        return 0;
     
-
-
-
-
-
-
-
-    return 0;
-}
+    }
