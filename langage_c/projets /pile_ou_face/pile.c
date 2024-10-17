@@ -82,7 +82,7 @@ int defaite = 0;
             tour--; 
         }
 
-        printf("\nloading\n");
+        printf("\nchargement\n");
         fflush(stdout);
         sleep(1);
         printf(".");
