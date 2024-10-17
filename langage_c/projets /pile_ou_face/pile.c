@@ -10,15 +10,19 @@
   
 void ortho(char * maj, char *  mot) {                    // tout convertir en minuscules.
 
-for(int i = 0; i < strlen(maj); i++) { 
+    for(int i = 0; i < strlen(maj); i++) { 
+
     if (maj[i] >= 'A' && maj[i] <= 'Z') {
         mot[i]= maj[i]+32;
     } else {
+
     mot[i] = maj[i];
 }
 }
 }
+
 int transform(char * saisie){
+
     char mini[255];
     saisie[strlen(saisie)-1] = 0;                           // supp \n
     memset(mini,0,255);
@@ -71,7 +75,6 @@ int defaite = 0;
         fgets(saisie,sizeof(saisie), stdin);
         int reponse = transform(saisie);
 
-
         if (reponse == -2) {
             printf("\nVous quittez le jeu... snif :(\n");
             return 0;
@@ -101,17 +104,33 @@ int defaite = 0;
             printf("\nperdu\n");
             defaite ++;
         }
-            printf("\n%d victoire\n", victoire);
-            printf("\n%d défaite\n", defaite);
-            printf("\n|==================================|\n");
-            
+        
 
-            
         if(defaite == 9) {
+            printf("\nfin de partie\n");
             return 0;
         }
+        
+        if(victoire < 2) {
+            printf("\n%d victoire\n", victoire);
         }
 
+        if(victoire >= 2) {
+            printf("\n%d victoires\n", victoire);
+        }
+
+        if(defaite < 2) {
+            printf("\n%d défaite\n", defaite);
+        }
+
+        if(defaite >= 2) {
+            printf("\n%d défaites\n", defaite);
+        }
+        
+        printf("\n|==================================|\n");
+       
+    }
+    
         return 0;
     
     }

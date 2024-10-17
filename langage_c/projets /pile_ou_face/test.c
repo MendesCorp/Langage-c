@@ -117,3 +117,16 @@ int chartoint(char *saisie) {
 
     // Si la saisie n'est ni "pile", "face", "1" ou "2", retourner une erreur
     return -1;
+
+    for victoire ++ && defaite ++
+    mettre au pluriel 
+    donc printf victoire%s, victoire
+    idem pour defaite
+
+    while(victoire > 1) {
+        printf("victoires\n", victoire);
+    }
+
+    while(defaite > 1) {
+        printf("défaites\n", defaite);
+    }
