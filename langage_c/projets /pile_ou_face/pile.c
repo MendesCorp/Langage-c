@@ -5,10 +5,8 @@
 #include <unistd.h>
 #define PILE 1
 #define FACE 2
-
-//FONCTIONS :
   
-void ortho(char * maj, char *  mot) {                    // tout convertir en minuscules.
+void ortho(char * maj, char *  mot) {                    
 
     for(int i = 0; i < strlen(maj); i++) { 
 
@@ -24,7 +22,7 @@ void ortho(char * maj, char *  mot) {                    // tout convertir en mi
 int transform(char * saisie){
 
     char mini[255];
-    saisie[strlen(saisie)-1] = 0;                           // supp \n
+    saisie[strlen(saisie)-1] = 0;                           
     memset(mini,0,255);
     ortho(saisie,mini);
 
@@ -38,6 +36,14 @@ int transform(char * saisie){
         return FACE;
     }
 
+     if(strcmp(mini, "pILe") == 0) {
+        return PILE;
+    }
+    
+    if(strcmp(mini, "fAcE") == 0) {
+        return FACE;
+    }
+    
     if(strcmp(mini, "1") == 0) {
         return PILE;
 
@@ -50,7 +56,7 @@ int transform(char * saisie){
     }else if (strcmp(mini, "f") == 0) {
         return FACE;
     }
-        return -1;    // = erreur
+        return -1;   
     }
 
 int main () {
