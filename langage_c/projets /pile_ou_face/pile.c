@@ -6,12 +6,13 @@
 #define PILE 1
 #define FACE 2
   
-void ortho(char * maj, char *  mot) {                    
+void transform(char * maj, char *  mot) {                    
 
     for(int i = 0; i < strlen(maj); i++) { 
 
     if (maj[i] >= 'A' && maj[i] <= 'Z') {
-        mot[i]= maj[i]+32;
+        mot[i] = maj[i]+32;
+
     } else {
 
     mot[i] = maj[i];
@@ -19,31 +20,28 @@ void ortho(char * maj, char *  mot) {
 }
 }
 
-int transform(char * saisie){
+int ortho(char * saisie){
 
     char mini[255];
     saisie[strlen(saisie)-1] = 0;                           
     memset(mini,0,255);
-    ortho(saisie,mini);
+    transform(saisie,mini);
 
     if(strcmp(mini, "0") == 0) {
         return -2;
     }
+
     if(strcmp(mini, "pile") == 0) {
         return PILE;
 
-    }else if ( strcmp(mini, "face") == 0) {
+    }else if (strcmp(mini, "face") == 0) {
         return FACE;
-    }
-
-     if(strcmp(mini, "pILe") == 0) {
-        return PILE;
     }
     
     if(strcmp(mini, "fAcE") == 0) {
         return FACE;
     }
-    
+
     if(strcmp(mini, "1") == 0) {
         return PILE;
 
@@ -63,11 +61,11 @@ int main () {
 
 srand(time(NULL));
     
-char saisie[255]; 
+char saisie[255]; // ajouter memset
 printf("\n######## Pile ou Face ##########\n");
 
-int victoire = 0;
-int defaite = 0;
+int reussite = 0;
+int echec = 0;
 
     for(int tour = 0; tour < 10; tour++) {
 
@@ -79,7 +77,7 @@ int defaite = 0;
         int piece = rand() %2 + 1;
 
         fgets(saisie,sizeof(saisie), stdin);
-        int reponse = transform(saisie);
+        int reponse = ortho(saisie);
 
         if (reponse == -2) {
             printf("\nVous quittez le jeu... snif :(\n");
@@ -88,7 +86,7 @@ int defaite = 0;
 
         if (reponse == -1) {
             printf("\nerreur entrez soit pile soit face.\n");
-            tour--; 
+            continue;
         }
 
         printf("\nchargement\n");
@@ -104,33 +102,35 @@ int defaite = 0;
         
         if(piece == reponse) {
             printf("\ngagné\n");
-            victoire ++;
+            reussite ++;
         
         }else{
             printf("\nperdu\n");
-            defaite ++;
+            echec ++;
         }
         
 
-        if(defaite == 9) {
+        if(echec == 9) {
             printf("\nfin de partie\n");
             return 0;
         }
+        // printf("\n%d Réussite%c\n", reussite, reussite > 1 ?'s': ' ');
+        // printf("\n%d Echec%c\n", echec, echec > 1 ?'s': ' ');
         
-        if(victoire < 2) {
-            printf("\n%d victoire\n", victoire);
+        if(reussite < 2) {
+            printf("\n%d Réussite\n", reussite);
         }
 
-        if(victoire >= 2) {
-            printf("\n%d victoires\n", victoire);
+        if(reussite >= 2) {
+            printf("\n%d Réussites\n", reussite);
         }
 
-        if(defaite < 2) {
-            printf("\n%d défaite\n", defaite);
+        if(echec < 2) {
+            printf("\n%d Echec\n", echec);
         }
 
-        if(defaite >= 2) {
-            printf("\n%d défaites\n", defaite);
+        if(echec >= 2) {
+            printf("\n%d Echecs\n", echec);
         }
         
         printf("\n|==================================|\n");
