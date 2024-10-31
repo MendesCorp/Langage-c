@@ -1,0 +1,3 @@
+pomme x10 : 3€
+cerise x17 : 1.50€
+poire x2 : 5€
