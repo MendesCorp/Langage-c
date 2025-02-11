@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Page-1" id="fpCRJre34QF4ECZneuB8">
+    <mxGraphModel dx="2261" dy="989" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-116" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-120" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-121" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-126" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-129" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-130" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-132" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-104" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="168" y="534" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-105" value="TCHAT" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="-72" y="256" width="1087" height="909" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-106" value="se connecter à un serveur" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="314" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-109" value="établir la connexion avec d&#39;autres utilisateurs" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="413" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-110" value="&lt;font style=&quot;color: rgb(0, 102, 51);&quot;&gt;gérer la capacité d&#39;acceuil des utilisateurs&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="515" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-111" value="créer et rejoindre différents salons d&#39;échange (privés et publiques)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="719" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-124" value="consulter la liste des utilisateurs présents" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="617" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-125" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.002;entryY=0.585;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XL5R96gYOWmhvDkPeT_q-104" target="XL5R96gYOWmhvDkPeT_q-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-127" value="&lt;font style=&quot;color: rgb(0, 102, 51);&quot;&gt;gérer le flux d&#39;échange de tous les salons&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="821" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-128" value="limite d&#39;accès dans un salon privé (2 utilisateurs max)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="923" width="175" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="XL5R96gYOWmhvDkPeT_q-131" value="&lt;font style=&quot;color: rgb(0, 102, 51);&quot;&gt;restriction des actions (pas de possibilité d&#39;être sur deux salons simultanément)&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="446" y="1025" width="213" height="74" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
